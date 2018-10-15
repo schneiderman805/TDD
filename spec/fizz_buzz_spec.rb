@@ -10,12 +10,9 @@ describe 'fizz_buzz' do
         expect(fizz_buzz(3)).to eq 'fizz'
       end
 
-      def fizz_buzz(number)
-        if number % 3 == 0
-          'fizz'
-        else
-          number
-        end 
+      it "returns 'buzz' if number is divisible by 5" do
+        expect(fizz_buzz(5)).to eq 'buzz'
       end
+
 
 end
